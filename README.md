@@ -5,8 +5,8 @@ In a microservice environment we often see a lot of service to service call. To 
 
 There are three simple steps:
 
-1️⃣ Write a trace generator middleware with the help of local storage packages like continous-local-storage(cls). We can check whether trace-id is present in request context. If present we will use that, otherwise we will generate that.
-2️⃣ Intercept HTTP clients to inject the trace-id in the outgoing request.
-3️⃣ Override the logger to add the trace-id in all logs that developers printed.
+1️⃣ Write a trace generator middleware with the help of local storage packages like continous-local-storage(cls). We can check whether trace-id is present in request context. If present we will use that, otherwise we will generate that.<br />
+2️⃣ Intercept HTTP clients to inject the trace-id in the outgoing request.<br />
+3️⃣ Override the logger to add the trace-id in all logs that developers printed.<br />
 
 <img width="797" alt="image" src="https://github.com/Talismanic/dispatcher-service/assets/21278048/ddb4100c-efac-4095-ac40-4210739f8504">
